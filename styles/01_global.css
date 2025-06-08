@@ -1,0 +1,17 @@
+/* Базовые стили для html-документа */
+html {
+  color: #000;
+  background-color: #000;
+
+  scrollbar-width: thin;
+  scrollbar-gutter: stable both-edges;
+}
+
+/* Контейнер основного содержимого */
+header,
+main,
+footer {
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: #fff;
+}

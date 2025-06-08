@@ -5,6 +5,167 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/00_normalize.css" />
+    <link rel="stylesheet" href="./styles/01_global.css" />
+    <link rel="stylesheet" href="./styles/10_header.css" />
+    <link rel="stylesheet" href="./styles/11_cover.css" />
+    <link rel="stylesheet" href="./styles/12_lots.css" />
   </head>
-  <body></body>
+
+  <body>
+    <header class="header">
+      <ul class="header__links">
+        <li><a href="#main">главная</a></li>
+        <li><a href="#lots">посмотреть лоты</a></li>
+        <li><a href="#about">об аукционе</a></li>
+      </ul>
+      <img class="header__logo" src="./images/logo-black.svg" alt="Логотип ОНО ТЕБЕ НАДО" />
+      <address class="header__address" itemscope itemtype="https://schema.org/Organization">
+        <meta itemprop="name" content="Sobaka.ge" />
+        <p>
+          <a
+            href="tel:+99995555555"
+            itemprop="telephone"
+            aria-label="Позвонить на номер +9 999 555 5555"
+          >
+            +9 999 555 5555
+          </a>
+          <a href="mailto:info@sobaka.ge" itemprop="email" aria-label="Написать на info@sobaka.ge">
+            info@sobaka.ge
+          </a>
+        </p>
+        <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span itemprop="streetAddress">наб. Принсенграхт 263–265</span>,
+          <span itemprop="addressLocality">Амстердам</span>
+        </p>
+      </address>
+    </header>
+
+    <main>
+      <section class="cover" id="main">
+        <img
+          class="cover__background"
+          src="./images/cover.jpg"
+          alt="Обложка книги про один день из жизни рекламного агента"
+        />
+        <h1 class="cover__header">
+          <p class="cover__header--left">О<span class="cover__header--spaced">Н</span>О</p>
+          <p class="cover__header--center">ТЕ<span class="cover__header--spaced">Б</span>Е</p>
+          <p class="cover__header--right"><span class="cover__header--spaced">Н</span>АДО</p>
+        </h1>
+        <div class="cover__content">
+          <p class="cover__description">
+            АУКЦИОН<span class="cover__description--spaced"> </span>ВЕЩЕЙ,<span
+              class="cover__description--spaced"
+            >
+            </span
+            >В<span class="cover__description--spaced"> </span>КОТОРЫЕ<span
+              class="cover__description--spaced"
+            >
+            </span
+            >НИКТО<span class="cover__description--spaced"> </span>НЕ<span
+              class="cover__description--spaced"
+            >
+            </span
+            >ВЕРИЛ
+          </p>
+          <button class="cover__action">СДЕЛАТЬ СТАВКУ</button>
+        </div>
+      </section>
+
+      <section class="lots" id="lots">
+        <h2 class="lots__header">Лоты</h2>
+        <ul class="lots__list">
+          <li class="lots__list-item">
+            <img
+              src="./images/card-lot-01.jpg"
+              alt="Кадр из фильма режиссёра, бросившего киношколу"
+            />
+            <h3><a href="">Фильм режиссёра, который бросил киношколу</a></h3>
+            <p>
+              Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не
+              знали, что режиссёр — Пол Томас Андерсон?
+            </p>
+          </li>
+          <li class="lots__list-item">
+            <img
+              src="./images/card-lot-02.jpg"
+              alt="Обложка книги про один день из жизни рекламного агента"
+            />
+            <h3><a href="">Книга, где описан один скучный день из жизни рекламного агента</a></h3>
+            <p>
+              Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на
+              древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории
+              литературы, начиная с античных времён. И это всё накладывается на эпическую поэму
+              Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?
+            </p>
+          </li>
+          <li class="lots__list-item">
+            <img src="./images/card-lot-03.jpg" alt="Картина в стиле абстракционизма" />
+            <h3><a href="">Картина, которую повторит даже 5-летний сын маминой подруги</a></h3>
+            <p>
+              Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на
+              инфузорию-туфельку. Никаких полей, лесов, котиков<span class="lots__list-item--spaced"
+                >...</span
+              >
+              Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных
+              работ Кандинского?
+            </p>
+          </li>
+        </ul>
+        <a href="" class="lots__link">посмотреть больше</a>
+      </section>
+
+      <section class="about" id="about">
+        <!-- Секция "о проекте" может быть дополнена контентом -->
+      </section>
+    </main>
+
+    <footer class="footer">
+      <address class="address" itemscope itemtype="https://schema.org/Organization">
+        <meta itemprop="name" content="Sobaka.ge" />
+        <p>
+          <a
+            href="tel:+99995555555"
+            itemprop="telephone"
+            aria-label="Позвонить на номер +9 999 555 5555"
+          >
+            +9 999 555 5555
+          </a>
+          <a href="mailto:info@sobaka.ge" itemprop="email" aria-label="Написать на info@sobaka.ge">
+            info@sobaka.ge
+          </a>
+        </p>
+        <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span itemprop="streetAddress">наб. Принсенграхт 263-265</span>,
+          <span itemprop="addressLocality">Амстердам</span>
+        </p>
+      </address>
+
+      <ul class="links">
+        <li><a href="#main">главная</a></li>
+        <li><a href="#lots">посмотреть лоты</a></li>
+        <li><a href="#about">об аукционе</a></li>
+      </ul>
+
+      <ul class="socials">
+        <li>
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+            <img src="./images/yt.svg" alt="Минималистичный логотип YouTube" />
+          </a>
+        </li>
+        <li>
+          <a href="https://m.vk.com/" target="_blank" rel="noopener noreferrer">
+            <img src="./images/vk.svg" alt="Минималистичный логотип ВКонтакте" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">
+            <img src="./images/pinterest.svg" alt="Минималистичный логотип Pinterest" />
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>
