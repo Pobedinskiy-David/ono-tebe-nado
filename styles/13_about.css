@@ -1,5 +1,5 @@
 .about {
-  padding: 184px 28px 165px 71px;
+  padding: 183px 27px 160px 71px;
 
   display: grid;
   grid-template-columns: auto 1fr;
@@ -32,7 +32,7 @@
   font-size: 40px;
   text-transform: uppercase;
 
-  padding: 69px 0;
+  padding: 68px 0;
 }
 
 /* Описание */
@@ -41,10 +41,17 @@
   line-height: 24px;
 }
 
-.about__description:first-child {
-  letter-spacing: 1%;
+.about__description:nth-child(2) {
+  letter-spacing: 0.005em;
 }
 
 .about__description:last-child {
-  letter-spacing: 4%;
+  padding-top: 2px;
+  letter-spacing: 0em;
+  line-height: 122%;
+  padding-right: 0px;
+}
+
+.about__description--spaced {
+  letter-spacing: 0.004em;
 }

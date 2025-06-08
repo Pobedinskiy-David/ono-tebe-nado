@@ -75,7 +75,7 @@
 }
 
 .cover__description--spaced {
-  letter-spacing: 0.9em;
+  letter-spacing: 0.85em;
 }
 
 /* Кнопка действия */
@@ -93,7 +93,6 @@
 /* Контейнер для текста и кнопки */
 .cover__content {
   width: 100%;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
