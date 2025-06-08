@@ -21,7 +21,7 @@
 /* Меню ссылок */
 .header__links {
   display: flex;
-  gap: 27px;
+  gap: 31px;
 
   margin: 0;
   padding: 0;
@@ -34,12 +34,12 @@
 }
 
 .header__links > li:nth-child(2) {
-  padding-left: 4px;
+  padding-left: 1px;
   letter-spacing: 0.01em;
 }
 
 .header__links > li:nth-child(3) {
-  padding-left: 5px;
+  padding-left: 1px;
   letter-spacing: 0.01em;
 }
 
