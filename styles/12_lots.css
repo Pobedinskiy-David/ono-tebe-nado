@@ -1,13 +1,13 @@
 /* Секция лотов */
 .lots {
-  padding: 0 24px;
-  padding-top: 150px;
+  padding: 152px 24px 0;
 }
 
-/* Заголовок секции лотов */
+/* Заголовок секции */
 .lots__header {
   margin: 0;
-  padding: 30px 40px;
+  padding: 28px 40px;
+
   font-size: 40px;
   text-transform: uppercase;
 }
@@ -17,22 +17,27 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
-  padding: 0;
+
   margin: 0;
+  padding: 0;
   list-style: none;
+
   font-weight: 700;
 }
 
-/* Элемент списка лотов */
+/* Карточка лота */
 .lots__list-item {
   position: relative;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 50px 40px;
+
   height: 563px;
+  padding: 51px 40px 48px;
   box-sizing: border-box;
   overflow: hidden;
+
   flex: 1 1 auto;
   z-index: 1;
 }
@@ -42,38 +47,62 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+
   width: 100%;
   height: 100%;
+
   object-fit: cover;
-  filter: brightness(50%);
+  filter: brightness(42%);
+
+  z-index: -1;
 }
 
-/* Заголовок лота */
+/* Заголовок карточки */
 .lots__list-item > h3 {
   margin: 0;
+
   color: #fff;
   font-size: 22px;
+  line-height: 120%;
   text-transform: uppercase;
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
-/* Описание лота */
+/* Ссылка внутри заголовка — visited */
+.lots__list-item > h3 > a:visited {
+  color: #fff;
+}
+
+/* Текст описания */
 .lots__list-item > p {
   margin: 0;
+
   color: #fff;
   font-size: 20px;
   font-weight: 400;
-  text-overflow: ellipsis;
-  overflow: hidden;
   line-height: 120%;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
+/* Дополнительный класс с межбуквенным интервалом */
 .lots__list-item--spaced {
   letter-spacing: 0.13em;
 }
 
-/* Цвет ссылок после посещения */
-.lots__list-item > h3 > a:visited {
-  color: #fff;
+/* Ссылка "посмотреть больше" */
+.lots__link {
+  display: inline-block;
+  margin: 31px 0 0 40px;
+
+  font-size: 20px;
+  color: #000;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.lots__link:visited {
+  color: #000;
 }

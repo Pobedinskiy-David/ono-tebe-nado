@@ -1,0 +1,73 @@
+.footer {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 50px 86px 50px;
+
+  display: grid;
+  grid-template-columns: 240px 1fr auto;
+  align-items: start;
+
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.footer a {
+  color: #000;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* Ссылки в футере */
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  text-align: center;
+  letter-spacing: 1%;
+}
+
+.footer__links > li:first-child {
+  list-style: none;
+}
+
+.footer__links > li:first-child > a {
+  text-decoration: none;
+}
+
+/* Адрес в футере */
+.footer__address {
+  width: 208px;
+  justify-self: start;
+
+  font-style: normal;
+  line-height: 1.35;
+}
+
+.footer__address > p {
+  margin: 0;
+}
+
+/* Соцсети */
+.footer__socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 48px;
+
+  width: auto;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.footer__socials-item {
+  width: 48px;
+  height: 48px;
+}

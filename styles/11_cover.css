@@ -1,10 +1,14 @@
+/* Обёртка секции cover */
 .cover {
   width: 100%;
   height: 757px;
+
   position: relative;
   z-index: 1;
+
   display: flex;
-  align-items: end;
+  align-items: flex-end;
+
   padding: 51px 50px 51px 78px;
 }
 
@@ -12,31 +16,38 @@
   margin: 0;
 }
 
+/* Фоновое изображение */
 .cover__background {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(42%);
   position: absolute;
-  margin: 0;
-  z-index: -1;
   top: 0;
   left: 0;
+  z-index: -1;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  filter: brightness(42%);
+  margin: 0;
 }
 
+/* Заголовок */
 .cover__header {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  width: 100%;
+  padding-top: 165px;
+
   font-size: 100px;
   font-weight: 700;
   color: #fff;
   letter-spacing: 0.3em;
-  padding-top: 165px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .cover__header--spaced {
@@ -46,34 +57,43 @@
 .cover__header--left {
   padding-left: 4.54545%;
 }
+
 .cover__header--center {
   margin-top: 7px;
   padding-left: 30.54545454%;
 }
+
 .cover__header--right {
   padding-left: 57.68%;
 }
 
+/* Подзаголовок / описание */
 .cover__description {
   font-size: 22px;
   line-height: 28px;
   color: #fff;
 }
+
 .cover__description--spaced {
   letter-spacing: 0.9em;
 }
 
+/* Кнопка действия */
 .cover__action {
   width: 256px;
   height: 51px;
-  border: 1px solid #fff;
-  color: #fff;
-  background-color: transparent;
+
   font-size: 22px;
+  color: #fff;
+
+  border: 1px solid #fff;
+  background-color: transparent;
 }
 
+/* Контейнер для текста и кнопки */
 .cover__content {
   width: 100%;
+
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -1,0 +1,50 @@
+.about {
+  padding: 184px 28px 165px 71px;
+
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 72px;
+}
+
+/* Логотип */
+.about__logo {
+  width: 240px;
+  height: 240px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #000;
+  border-radius: 100%;
+
+  padding-top: 1px;
+  padding-left: 1px;
+}
+
+.about__logo-image {
+  width: 148px;
+  height: 114px;
+}
+
+/* Заголовок */
+.about__header {
+  font-size: 40px;
+  text-transform: uppercase;
+
+  padding: 69px 0;
+}
+
+/* Описание */
+.about__description {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.about__description:first-child {
+  letter-spacing: 1%;
+}
+
+.about__description:last-child {
+  letter-spacing: 4%;
+}
