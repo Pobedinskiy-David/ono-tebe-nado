@@ -14,15 +14,23 @@
 
   <body>
     <header class="header">
-      <ul class="header__links">
-        <li><a href="#main">главная</a></li>
-        <li><a href="#lots">посмотреть лоты</a></li>
-        <li><a href="#about">об аукционе</a></li>
-      </ul>
+      <nav>
+        <ul class="header__links">
+          <li><a href="#main" class="no-underline">главная</a></li>
+          <li><a href="#lots">посмотреть лоты</a></li>
+          <li><a href="#about">об аукционе</a></li>
+        </ul>
+      </nav>
+
       <a href="">
         <img class="header__logo" src="./images/logo-black.svg" alt="Логотип ОНО ТЕБЕ НАДО" />
       </a>
-      <address class="header__address" itemscope itemtype="https://schema.org/Organization">
+
+      <address
+        class="address-block header__address"
+        itemscope
+        itemtype="https://schema.org/Organization"
+      >
         <meta itemprop="name" content="Sobaka.ge" />
         <p>
           <a
@@ -44,17 +52,19 @@
     </header>
 
     <main>
-      <section class="cover" id="main">
-        <img
-          class="cover__background"
-          src="./images/cover.jpg"
-          alt="Обложка книги про один день из жизни рекламного агента"
-        />
+      <section class="cover with-lens" id="main">
         <h1 class="cover__header">
-          <span class="cover__header--left">О<span class="cover__header--spaced">Н</span>О</span>
-          <span class="cover__header--center">ТЕ<span class="cover__header--spaced">Б</span>Е</span>
-          <span class="cover__header--right"><span class="cover__header--spaced">Н</span>АДО</span>
+          <span> О<span class="cover__header--spaced">Н</span>О</span>
+          <span class="cover__header--center">
+            ТЕ<span class="cover__header--spaced">Б</span>Е
+          </span>
+          <span class="cover__header--right">
+            <span class="cover__header--spaced">Н</span>АД<span class="cover__header--no-spaced"
+              >О</span
+            >
+          </span>
         </h1>
+
         <div class="cover__content">
           <p class="cover__description">
             АУКЦИОН<span class="cover__description--spaced"> </span>ВЕЩЕЙ,<span
@@ -71,48 +81,44 @@
             </span
             >ВЕРИЛ
           </p>
-          <button class="cover__action">СДЕЛАТЬ СТАВКУ</button>
+          <button class="cover__action" type="button">СДЕЛАТЬ СТАВКУ</button>
         </div>
       </section>
 
       <section class="lots" id="lots">
         <h2 class="lots__header">Лоты</h2>
         <ul class="lots__list">
-          <li class="lots__list-item">
-            <img
-              src="./images/card-lot-01.jpg"
-              alt="Кадр из фильма режиссёра, бросившего киношколу"
-            />
-            <h3><a href="">Фильм режиссёра, который бросил киношколу</a></h3>
-            <p>
-              Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не
-              знали, что режиссёр — Пол Томас Андерсон?
-            </p>
+          <li class="lots__list-item lots__list-item--lot1 with-lens">
+            <a href="" class="lots__card">
+              <h3>Фильм режиссёра, который бросил киношколу</h3>
+              <p>
+                Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не
+                знали, что режиссёр — Пол Томас Андерсон?
+              </p>
+            </a>
           </li>
-          <li class="lots__list-item">
-            <img
-              src="./images/card-lot-02.jpg"
-              alt="Обложка книги про один день из жизни рекламного агента"
-            />
-            <h3><a href="">Книга, где описан один скучный день из жизни рекламного агента</a></h3>
-            <p>
-              Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на
-              древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории
-              литературы, начиная с античных времён. И это всё накладывается на эпическую поэму
-              Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?
-            </p>
+          <li class="lots__list-item lots__list-item--lot2 with-lens">
+            <a href="" class="lots__card">
+              <h3>Книга, где описан один скучный день из жизни рекламного агента</h3>
+              <p>
+                Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на
+                древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории
+                литературы, начиная с античных времён. И это всё накладывается на эпическую поэму
+                Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?
+              </p>
+            </a>
           </li>
-          <li class="lots__list-item">
-            <img src="./images/card-lot-03.jpg" alt="Картина в стиле абстракционизма" />
-            <h3><a href="">Картина, которую повторит даже 5-летний сын маминой подруги</a></h3>
-            <p>
-              Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на
-              инфузорию-туфельку. Никаких полей, лесов, котиков<span class="lots__list-item--spaced"
-                >...</span
-              >
-              Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных
-              работ Кандинского?
-            </p>
+          <li class="lots__list-item lots__list-item--lot3 with-lens">
+            <a href="" class="lots__card">
+              <h3>Картина, которую повторит даже 5-летний сын маминой подруги</h3>
+              <p>
+                Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на
+                инфузорию-туфельку. Никаких полей, лесов, котиков
+                <span class="lots__list-item--spaced">...</span>
+                Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных
+                работ Кандинского?
+              </p>
+            </a>
           </li>
         </ul>
         <a href="" class="lots__link">посмотреть больше</a>
@@ -131,18 +137,21 @@
           <p class="about__description">
             Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши
             лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник
-            девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти
-            странные вещи, созданные любителями?
+            девочки-подростка<span class="about__description--spaced"></span>
+              или картина, которую может нарисовать даже ребёнок?</span
+            >
+            Кому нужны все эти странные вещи, созданные любителями?
           </p>
           <p class="about__description">
             Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах
             растерзанные критиками. Непринятые и непонятые.
             <span class="about__description--spaced"
               >Когда-то они казались просто неудачными. Но, несмотря</span
-            ><br />на критику, кажущуюся простоту или сложность, сейчас без этих лотов
-            невозможно<span class="about__description--spaced">
-              представить современную культуру. Когда в эти вещи не верил никто,</span
             >
+            на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно
+            <span class="about__description--spaced-aletrnate"
+              >представить современную культуру. Когда в эти вещи не</span> верил никто,
+            
             продолжали верить их создатели. И сейчас эти лоты стали культовыми.
           </p>
         </div>
@@ -150,7 +159,11 @@
     </main>
 
     <footer class="footer">
-      <address class="footer__address" itemscope itemtype="https://schema.org/Organization">
+      <address
+        class="address-block footer__address"
+        itemscope
+        itemtype="https://schema.org/Organization"
+      >
         <meta itemprop="name" content="Sobaka.ge" />
         <p>
           <a
@@ -170,11 +183,14 @@
         </p>
       </address>
 
-      <ul class="footer__links">
-        <li><a href="#main">главная</a></li>
-        <li><a href="#lots">посмотреть лоты</a></li>
-        <li><a href="#about">об аукционе</a></li>
-      </ul>
+      <nav>
+        <ul class="footer__links">
+          <li><a href="#main" class="no-underline">главная</a></li>
+          <li><a href="#lots">посмотреть лоты</a></li>
+          <li><a href="#about">об аукционе</a></li>
+        </ul>
+      </nav>
+
       <ul class="footer__socials">
         <li class="footer__socials-item">
           <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
