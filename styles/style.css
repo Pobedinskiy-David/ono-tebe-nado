@@ -2,10 +2,6 @@
 /*  Утилитарные классы                    */
 /* -------------------------------------- */
 
-.no-underline {
-  text-decoration: none !important;
-}
-
 .address-block {
   font-style: normal;
   line-height: 1.35;
@@ -35,16 +31,21 @@
   background-image: url('../images/cover.jpg');
 }
 
-.lots__list-item--lot1.with-lens::before {
+.lots__list-item--background-film.with-lens::before {
   background-image: url('../images/card-lot-01.jpg');
 }
 
-.lots__list-item--lot2.with-lens::before {
+.lots__list-item--background-book.with-lens::before {
   background-image: url('../images/card-lot-02.jpg');
 }
 
-.lots__list-item--lot3.with-lens::before {
+.lots__list-item--background-picture.with-lens::before {
   background-image: url('../images/card-lot-03.jpg');
+}
+
+.header a.no-underline,
+.footer a.no-underline {
+  text-decoration: none;
 }
 
 /* -------------------------------------- */
@@ -112,7 +113,6 @@
 
 .cover__header {
   margin: 0;
-  height: 492px;
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -121,6 +121,7 @@
   font-weight: 700;
   color: #fff;
   letter-spacing: 0.3em;
+  padding-bottom: 126px;
 }
 
 .cover__header--spaced {
